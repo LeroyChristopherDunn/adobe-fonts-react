@@ -152,7 +152,7 @@ function FiltersToolbar(props: {
     return (
         <Stack className="filter-container" direction="row" spacing={12} marginBottom={2}>
             <Box>
-                <Typography variant={"caption"}>View</Typography>
+                <Typography variant={"caption"} gutterBottom>View</Typography>
                 <Stack direction="row">
                     <Button startIcon={<FormatListBulletedIcon/>} color={"inherit"}>
                         List
@@ -163,7 +163,7 @@ function FiltersToolbar(props: {
                 </Stack>
             </Box>
             <Box>
-                <Typography variant={"caption"}>Sample Text</Typography>
+                <Typography variant={"caption"} gutterBottom>Sample Text</Typography>
                 <Autocomplete
                     disablePortal
                     options={sampleTextOptions}
@@ -181,8 +181,8 @@ function FiltersToolbar(props: {
             </Box>
             <Box display="flex" flexDirection="column">
                 <Stack direction={"row"}>
-                    <Typography variant={"caption"} flexGrow={1}>Text Size</Typography>
-                    <Typography variant={"caption"}>{props.textSize}</Typography>
+                    <Typography variant={"caption"} flexGrow={1} gutterBottom>Text Size</Typography>
+                    <Typography variant={"caption"} gutterBottom>{props.textSize}</Typography>
                 </Stack>
                 <Slider
                     min={4}

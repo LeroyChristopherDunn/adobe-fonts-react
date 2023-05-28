@@ -1,7 +1,19 @@
-import {AppBar, Box, Divider, IconButton, InputAdornment, Link, Paper, Stack, TextField, Toolbar} from '@mui/material';
+import {
+    AppBar,
+    Box,
+    Divider,
+    IconButton,
+    InputAdornment,
+    Link as MUILink,
+    Paper,
+    Stack,
+    TextField,
+    Toolbar
+} from '@mui/material';
 import Typography from '@mui/material/Typography';
 import React from 'react';
 import {CameraAlt, Search} from "@mui/icons-material";
+import {Link} from "react-router-dom";
 
 export default function AppAppBar() {
     return (
@@ -33,7 +45,9 @@ export default function AppAppBar() {
                             <AppBarNavLink title={"Plugins"}/>
                             <AppBarNavLink title={"3D Assets"}/>
                         </Stack>
-                        <AppBarNavLink title={"Sign in"}/>
+                        <Link className="link-unstyled" to={"log-in"} >
+                            <Typography variant={"body2"}>Sign In</Typography>
+                        </Link>
                     </Toolbar>
                 </Paper>
             </AppBar>
@@ -92,12 +106,12 @@ function AppLogo() {
 
 function AppBarNavLink(props: { title: string }) {
     return (
-        <Link
+        <MUILink
             color={"inherit"}
             underline={"none"}
             href={'#'}
         >
             <Typography variant={"body2"}>{props.title}</Typography>
-        </Link>
+        </MUILink>
     )
 }

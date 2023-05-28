@@ -2,7 +2,7 @@ import React from 'react';
 import { createTheme } from '@mui/material/styles';
 
 export const inputBorderColor = '#c4c4c4';
-export const inputBorderWidth = '2px';
+export const inputBorderWidth = '1px';
 
 const theme = createTheme({
   palette: {
