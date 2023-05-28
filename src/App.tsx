@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.scss';
-import {Button} from "@mui/material";
 import AppAppBar from "./modules/navigation/AppAppBar";
+import {FontScreen} from "./modules/font/FontScreen";
+import {Footer} from "./modules/navigation/Footer";
 
 function App() {
     return (
         <div className="app-container">
             <AppAppBar/>
-            <Button>Test</Button>
+            <div className="content-container">
+                <FontScreen/>
+                <Footer/>
+            </div>
         </div>
     );
 }

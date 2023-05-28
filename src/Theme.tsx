@@ -21,11 +21,16 @@ const theme = createTheme({
   typography: {
     fontSize: 14,
     fontFamily: 'Inter, sans-serif',
+    h3: {
+      fontSize: 40,
+      marginLeft: '-2px',
+      marginBottom: '0.5rem',
+    },
     h5: {
       fontWeight: 500,
     },
     button: {
-      fontWeight: 600,
+      fontWeight: 400,
       textTransform: 'none',
     },
     overline: {
@@ -124,6 +129,11 @@ const theme = createTheme({
     MuiAutocomplete: {
 
     },
+    MuiSlider: {
+      defaultProps: {
+        size: 'small',
+      }
+    }
   },
 });
 export default theme;
