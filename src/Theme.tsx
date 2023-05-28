@@ -101,7 +101,8 @@ const theme = createTheme({
     },
     MuiCircularProgress: {
       defaultProps: {
-        size: 24,
+        size: 16,
+        thickness: 6,
       },
     },
     MuiIcon: {
