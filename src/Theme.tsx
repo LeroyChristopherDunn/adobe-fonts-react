@@ -8,7 +8,7 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#025141',
+      main: '#286dc7',
     },
     secondary: {
       main: '#ff9100',
@@ -57,6 +57,7 @@ const theme = createTheme({
     MuiInputBase: {
       defaultProps: {
         margin: 'dense',
+        sx: theme => ({fontSize: theme.typography.fontSize}),
       },
     },
     MuiInputLabel: {
